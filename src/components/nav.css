@@ -1,0 +1,119 @@
+#nav{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+
+#nav li:hover{
+    color:white;
+    cursor: pointer;
+}
+#nav a{
+    text-decoration: none;
+     color: pink;
+     padding:20px;
+     font-size: 30px;
+     font-weight: bold;
+}
+
+#nav a:Hover{
+    text-decoration: none;
+    color:black;
+}
+
+#l{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#login{
+
+    background: none;
+    color: pink;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    font-size: 30px;
+    padding:20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#login:hover{
+    color: black;
+}
+#logo{
+    background: none;
+    border-radius: 80px
+}
+#headerbanner{
+    justify-content: space-around;
+    background-color: black;
+}
+
+#headbanner img{
+    width: 200px;
+}
+
+#mobilenav{
+    display: none;
+}
+
+#login a{
+    text-decoration: none;
+    color:pink
+}
+
+
+@media(max-width: 600px){
+    #nav{
+        display:none
+    }
+    #l{
+        padding:0px
+    }
+
+    #lo{
+        font-size: 24px;
+    }
+
+    #mobilenav{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #mobile ul{
+        padding: 0px;
+    }
+    #mobilenav li{
+        color: pink;
+        list-style: none;
+    }
+
+    #mobilenav a{
+        padding: 20px;
+        color: pink;
+    }
+    #mobilenav button{
+        font-family: 'Courier New', Courier, monospace;
+        border: pink solid 2px;
+        background-color: white;
+
+    }
+    #mob a{
+        text-decoration: none;
+
+    }
+    #mob{
+        text-align: center;
+
+    }
+    #mob ul{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,22 @@
+#review{
+    display:flex;
+
+   padding-bottom: 40px;
+    justify-content: space-around;
+
+}
+
+#img{
+
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#review img{
+    height: 140px;
+
+}

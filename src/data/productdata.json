@@ -1,0 +1,36 @@
+
+[{
+    "name": "Large oil",
+    "price": 39.00,
+    "ingredients": "",
+    "photo":"./oil"
+    
+},{
+    "name": "Weave",
+    "price": 200.00,
+    "ingredients": "",
+    "photo":"./pics/weave.jpg"
+    
+},
+{
+    "name": "Wig",
+    "price": 150.00,
+    "ingredients": "",
+    "photo":""
+    
+},
+{
+    "name": "Brush",
+    "price": 10.00,
+    "ingredients": "",
+    "photo":""
+    
+},
+{
+    "name": "Shampoo",
+    "price": 19.00,
+    "ingredients": "",
+    "photo":""
+    
+}
+]
