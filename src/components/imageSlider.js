@@ -24,7 +24,7 @@ const Slider = ()=>{
     
    
     const [index, setIndex] = useState(0);
-    const delay = 5500;
+    const delay = 3000;
 
 
   useEffect(() => {

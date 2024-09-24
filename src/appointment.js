@@ -27,6 +27,7 @@ const Appointment = ()=>{
             let sub={id, name, style, phone, email}
             setSub(sub)
             // alert(`Name: ${name}, style: ${style}, phone: ${phone}, email: ${email}`)
+            alert('Posted')
            
 
     }
@@ -35,7 +36,7 @@ const Appointment = ()=>{
     return(
         <div>
             <Nav/>
-            <h1 id="title">Book Appointment</h1>
+            <h1 style={{background:'black', margin:0, color:'white', padding:'20px'}}  id="title">Book Appointment</h1>
 
             <div id="form">
             <div style={{textAlign:'center'}}>

@@ -117,8 +117,11 @@ const Products = ()=>{
                     </div>
             ))}
             </div> */}
+            {
+                
+            
                     <Card products={products}/>
-
+            }
             
             <Footer/>
         </div>

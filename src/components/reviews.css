@@ -3,9 +3,7 @@
 
    padding-bottom: 40px;
     /* justify-content: space-around; */
-    align-items: center;
-    flex-wrap: wrap;
-
+    align-items: center
 }
 
 #ph{
@@ -43,4 +41,29 @@
 #review img{
     height: 140px;
 
+}
+
+@media(max-width:600px){
+    #review{
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    }
+
+    #review span{
+        justify-content: center;
+    display: flex;
+    }
+
+    #review img{
+        height: 100px;
+    }
+
+    #stars{
+        justify-content: center;
+    }
+
+    #review p{
+        text-align: center;
+    }
 }

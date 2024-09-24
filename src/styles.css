@@ -21,9 +21,20 @@
 
 }
 
+#p{
+    margin: 20px;
+        border: 5px solid black;
+        border-radius: 10px;
+        background-color: white;
+        justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 #button{
     border:none;
-    background-color: white;
     font-weight: bold;
     display:flex;
     cursor: pointer;
@@ -46,6 +57,13 @@
     padding: 20px;
     align-items: left;
     display: flex;
+    border: 3px solid black
+}
+
+#s p{
+    font-weight: 900;
+    margin: 0px;
+    margin-top:20px
 }
 #s img{
     width:200px
@@ -54,5 +72,9 @@
 @media(max-width:600px) {
     #style{
         flex-direction: column;
+    }
+
+    #s{
+        margin:30px
     }
 }

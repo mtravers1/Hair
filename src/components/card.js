@@ -30,9 +30,9 @@ const Card = (props)=>{
     
     <div id="prod">
       <div id="p">
-        <h2 value={d.name}>{d.name}</h2>
-        <h4 value={d.price}>$ {d.price}</h4>
-        <h4 value={d.description}>{d.ingredients}</h4>
+        <p value={d.name}>{d.name}</p>
+        <p value={d.price}>$ {d.price}</p>
+        <p value={d.description}>{d.ingredients}</p>
         <img value={d.photo} src={d.photo}/>
         {/* <input /> */}
         <div id='buttin'>

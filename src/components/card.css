@@ -1,9 +1,14 @@
 #button{
     display: flex;
-    border-radius: 200px;
+    /* border-radius: 200px; */
     font-weight: 200px;
 }
+#p p{
+  
+    margin:10px;
+    font-weight: 900;
 
+}
 
 #buttin{
     display: flex;
@@ -14,8 +19,19 @@
 
 #p{
     margin: 20px;
-        border: .5px solid black;
+        border: 5px solid black;
         border-radius: 10px;
         background-color: white;
+        justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+
+@media(max-width:600px){
+    #p{
+        margin:75px;
+
+    }
 }

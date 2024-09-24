@@ -9,13 +9,13 @@ import r1 from '../pics/r1.jpg'
 import r2 from '../pics/r2.jpg'
 const Reviews=()=>{
     const [dada, SetReviews]=useState([{
-        name:"dameatis",
+        name:"Mike",
         img:pic,
         rating: 4,
         description:"Fast, Inexpesive, Impressed, best stylist i've been to",
         photo:r1
     },{
-        name:"dameatis",
+        name:"Michelle",
         img:pic,
         rating: 4,
         description:"Fast, Inexpesive, Impressed, would highly recommend",

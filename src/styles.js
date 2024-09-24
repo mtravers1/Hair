@@ -38,8 +38,8 @@ const Styles = ()=>{
             <div id="style">
             {hairstyles.map((d)=>(
                 <div id='s'>
-                    <h2>{d.name}</h2>
-                    <h4>$ {d.price}</h4>
+                    <p>{d.name}</p>
+                    <p>$ {d.price}</p>
                     <img src={d.photo}/>
                     <div id='bu'>
                     <button id="button">Add to Cart</button>

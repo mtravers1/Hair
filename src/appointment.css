@@ -40,3 +40,15 @@ form button:hover{
     background-color: black;
     color: pink;
 }
+
+@media(max-width:600px){
+    form{
+        display: flex;
+        flex-direction: column;
+        font-size: 28px;
+        color: black;
+        font-weight: bold;
+        width: 75%;
+        justify-content: center;
+    }
+}
