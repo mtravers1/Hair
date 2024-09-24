@@ -1,7 +1,7 @@
 #styles{
     display:flex;
     justify-content: space-around;
-    background-color: pink;
+    background: linear-gradient(0.25turn, pink, white, pink);
     flex-direction: row;
 
 }
@@ -9,7 +9,7 @@
 #style{
     display:flex;
     justify-content: space-around;
-    background-color: pink;
+    background: linear-gradient(0.25turn, pink, white, pink);
     flex-direction: row;
     font-family: 'Courier New', Courier, monospace;
 

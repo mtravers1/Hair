@@ -18,11 +18,10 @@
 
 #container1{
   display:flex;
-   height: 600px;
+   height: 900px;
   align-items: center;
   justify-content: space-around;
-  background-color: pink;
-
+  background: linear-gradient(0.25turn, pink, white, pink);
 }
 #footer{
   background-color: black;
@@ -96,9 +95,11 @@ input{
   #container1{
     display: flex;
     flex-wrap: wrap;
+    height: 700px;
   }
   #container1 img{
-    width:380px
+    width:350px;
+    padding:0px
   }
 
   #header{

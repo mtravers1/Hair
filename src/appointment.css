@@ -16,7 +16,7 @@ form{
 }
 
 #form{
-    background-color: pink;
+    background: linear-gradient(0.25turn, pink, white, pink);
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     justify-content: center;
@@ -34,6 +34,7 @@ form button{
     background-color: pink;
     font-size: 30px;
     border: 4px solid black;
+    color: black;
 }
 
 form button:hover{

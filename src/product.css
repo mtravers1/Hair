@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: pink;
+    background: linear-gradient(0.25turn, pink, white, pink);
 }
 
 #prod{
