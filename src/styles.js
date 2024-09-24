@@ -34,7 +34,7 @@ const Styles = ()=>{
     return(
         <div>
         <Nav/>
-            <h1 id='h' >Styles</h1>
+            <h1 style={{background:'black', margin:0, color:'white', padding:'20px'}} id='h' >Styles</h1>
             <div id="style">
             {hairstyles.map((d)=>(
                 <div id='s'>

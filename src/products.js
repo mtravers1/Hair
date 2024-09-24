@@ -89,7 +89,7 @@ const Products = ()=>{
         </span>
       </header> */}
             <Nav/>
-            <h1>Products</h1>
+            <h1 style={{background:'black', margin:0, color:'white', padding:'20px'}} >Products</h1>
             <Card products={products}/>
             {/* <div id="inven">
 
@@ -103,7 +103,7 @@ const Products = ()=>{
                     </div>
             ))}
             </div> */}
-            <h1>Deals</h1>
+            <h1 style={{background:'black', margin:0, color:'white', padding:'20px'}}>Deals</h1>
 
             
             {/* <div id="inven">

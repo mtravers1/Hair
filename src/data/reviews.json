@@ -1,21 +1,16 @@
 [{
-    "name":"dameatis",
+    "name":"Michelle",
     "img":"./pics/user.png",
     "rating": 4,
-    "description":"Fast, Inexpesive, Impressed"
+    "description":"Fast, Inexpesive, Impressed, would highly recommend",
+    "photo":"./pics/r2.jpg"
+
 },{
-    "name":"dameatis",
+    "name":"Mike",
     "img":"./pics/user.png",
     "rating": 4,
-    "description":"Fast, Inexpesive, Impressed"
-},{
-    "name":"dameatis",
-    "img":"./pics/user.png",
-    "rating": 4,
-    "description":"Fast, Inexpesive, Impressed"
-},{
-    "name":"dameatis",
-    "img":"./pics/user.png",
-    "rating": 4,
-    "description":"Fast, Inexpesive, Impressed"
-}]
+    "description":"Fast, Inexpesive, Impressed, best stylist every",
+    "photo":"./pics/r2.jpg"
+}
+
+]

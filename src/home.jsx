@@ -79,10 +79,10 @@ function Home() {
           </span>
     
      </div>
-  <Styles/>
-     {/* <div id="reviews">
+  {/* <Styles/> */}
+     <div id="reviews">
         <Reviews/>
-     </div> */}
+     </div>
     
      {/* <footer id="footer" >
       <h3>Contact:</h3>
