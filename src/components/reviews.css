@@ -43,6 +43,10 @@
 
 }
 
+#ph img{
+    width:300px
+}
+
 @media(max-width:600px){
     #review{
         justify-content: center;
@@ -65,5 +69,10 @@
 
     #review p{
         text-align: center;
+    }
+
+    #ph img{
+        width:500px;
+        height: 280px;
     }
 }

@@ -59,7 +59,7 @@ const Reviews=()=>{
                             <p>{d.description}</p>
                             </span>
                             <span id='ph'>
-                            <img width={300} src={d.photo}/>
+                            <img src={d.photo}/>
 
                             </span>
                             </div>
