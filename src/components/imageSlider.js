@@ -16,7 +16,7 @@ import data from '../data/data'
 const Slider = ()=>{
 
     let i=0
-    var time = 4000;	// Time Between Switch
+    var time = 2000;	// Time Between Switch
 
     // Image List
 
