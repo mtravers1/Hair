@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from './components/nav'
 import { useState, useEffect } from 'react'
 import Footer from './footer'
-import productdata from './data/productdata.json'
+import productdata from './data/productdata'
 import oil from './pics/oil.jpg'
 import weave from './pics/weave.jpg'
 import './product.css';
@@ -13,19 +13,18 @@ import oil4 from './pics/oil4.jpg'
 import oil5 from './pics/oil5.jpg'
 import wig1 from './pics/wig1.jpg'
 import wig2 from './pics/wig2.jpg'
-
-
-
+import { CartState } from './context-reducer/Context'
+// import state from './context-reducer/Context'
 
 
 
 const Products = ()=>{
-
-    const [cart, SetCart]=useState({name:"", price:0, description:""})
-
+   
+const {state:{items}}=CartState()
+console.log('the',items)
+    // const [cart, SetCart]=useState({name:"", price:0, description:""})
     const handleDelete=(e)=>{
         e.preventDefault()
-
 
     }
 

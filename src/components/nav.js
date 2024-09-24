@@ -3,8 +3,11 @@ import { useState } from "react";
 import './nav.css'
 import { FaCartShopping } from "react-icons/fa6";
 import logo from '../pics/logo.jpg'
-
+import { CartState } from "../context-reducer/Context";
 const Nav = ()=>{
+
+  const {state:{cart}, dispatch}=CartState()
+console.log('this is the cart',cart)
     const [nav, setNav]=useState('')
     const [toggle, setToggle]=useState()
 
@@ -18,6 +21,7 @@ const Nav = ()=>{
         <a href='/'><img width={100} src={logo} alt="logo" id="logo"/></a> 
         </span>
         <span>
+
           <a style={{textDecoration:'none', color:'white'}} href='/'><h2>Hair Stylist Creations</h2></a>
         </span>
         <div id="navhead">
@@ -44,6 +48,8 @@ const Nav = ()=>{
           <button id="login"><a href='/login'>Login</a></button>
 
           </span>
+          <p id='cl'>{cart.length}</p>
+
           <a href='./cart'><button style={{background:"none", color:"pink", border:'none', cursor:'pointer'}}><FaCartShopping size={30} /></button></a>
             
 

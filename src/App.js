@@ -6,12 +6,11 @@ import Home from "./home";
 import About from "./about";
 import Login from "./login"
 import Appointment from "./appointment";
-import { StoreProvider } from "./context-reducer/Context";
-import Cart from "./cart";
+import {CartState} from './context-reducer/Context'
+import Carts from "./carts";
 const App = ()=>{
   return(
     <div>
-      <StoreProvider>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/appointment" element={<Appointment/>}/>
@@ -21,13 +20,12 @@ const App = ()=>{
         <Route path="/styles" element={<Styles/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/login" element={<Login/>}/>
-        <Route path="/cart" element={<Cart/>}/>
+        <Route path="/cart" element={<Carts/>}/>
 
 
 
 
       </Routes>
-      </StoreProvider>
 
     </div>
   )

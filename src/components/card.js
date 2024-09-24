@@ -3,11 +3,14 @@ import oil from '../pics/oil.jpg'
 import weave from '../pics/weave.jpg'
 import "./card.css"
 import { useContext } from 'react'
-import { StoreContext } from '../context-reducer/Context'
+// import { StoreContext } from '../context-reducer/Context'
 import { useState } from 'react'
 import { FaStar } from 'react-icons/fa6'
+import { CartState } from '../context-reducer/Context'
 const Card = (props)=>{
 
+    const {state:{cart}, dispatch}=CartState()
+    
     const prod=props.products
     const [name, setName]=useState()
     const [price, setPrice]=useState()
@@ -16,7 +19,7 @@ const Card = (props)=>{
     // const prod=props.hairstyles
     // console.log(prod)
     const [add, SetAdd]=useState({name:"name", price:0, description:"description"})
-    const {addToBasket}=useContext(StoreContext)
+    // const {addToBasket}=useContext(StoreContext)
     const handleClick=(e)=>{    
         e.preventDefault()
         let data={name:prod.name, price:prod.price, description:prod.description}
@@ -27,13 +30,13 @@ const Card = (props)=>{
     const handleAdd= ()=>{
         let data={name, price, description}
         
-        addToBasket(data)
+        // addToBasket(data)
         console.log(name)
         
 
 
     }
-
+    console.log(cart)
     return(
         <div>
             <div id="inven">
@@ -94,7 +97,7 @@ const Card = (props)=>{
         </select>
         {/* <input /> */}
         <div id='buttin'>
-        <button onClick={handleAdd} id="button">Add to cart</button>
+        <button onClick={()=>dispatch({type: "ADD_TO_CART", payload:d})} id="button">Add to cart</button>
 
         </div>
     </div>

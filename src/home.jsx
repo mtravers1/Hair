@@ -11,7 +11,7 @@ import mainimg from './pics/mainimg.jpg'
 import Reviews from './components/reviews';
 import banner from "./pics/banner.jpg"
 import Styles from './components/styles'
-
+import { CartState } from './context-reducer/Context';
 import Slider from './components/imageSlider';
 function Home() {
 
@@ -46,6 +46,7 @@ function Home() {
   // fetch(url)
   // .then(res=>res.json)
   // .then(data=>console.log([data]))
+ 
   return (
 
     <div className="App">
