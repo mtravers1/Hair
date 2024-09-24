@@ -11,6 +11,7 @@ import mainimg from './pics/mainimg.jpg'
 import Reviews from './components/reviews';
 import banner from "./pics/banner.jpg"
 import Styles from './components/styles'
+
 import Slider from './components/imageSlider';
 function Home() {
 

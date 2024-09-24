@@ -4,24 +4,23 @@ import head1 from '../pics/banner.jpg'
 import braids from '../pics/braids.jpg'
 import dreads from '../pics/dreads.jpg'
 import weave from '../pics/weave.jpg'
-// import h1 from '../pics/h1.png'
-// import h2 from '../pics/h2.png'
-// import h3 from '../pics/h3.jpg'
-// import h4 from '../pics/h4.jpg'
-// import h6 from '../pics/h6.jpg'
+import h1 from '../pics/h1.png'
+import h2 from '../pics/h2.png'
+import h3 from '../pics/h3.jpg'
+import h4 from '../pics/h4.jpg'
+import h6 from '../pics/h6.jpg'
 import {useState, useEffect} from 'react'
-// import './imageSlider.css'
+import './imageSlider.css'
 import data from '../data/data'
 
 const Slider = ()=>{
 
     let i=0
-    var time = 2000;	// Time Between Switch
-    let images = []
+    var time = 32000;	// Time Between Switch
 
     // Image List
 
-    // let images = [h1, h2, h3, h4, h6]
+    let images = [h1, h2, h3, h4, h6]
     
    
     const [index, setIndex] = useState(0);
