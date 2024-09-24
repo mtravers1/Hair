@@ -18,10 +18,22 @@
 
 #container1{
   display:flex;
-   height: 900px;
-  align-items: center;
+   height: 800px;
   justify-content: space-around;
   background: linear-gradient(0.25turn, pink, white, pink);
+  padding-top: 200px;
+}
+
+#h1{
+  font-size: 72px;
+}
+
+#h2{
+  font-size: 48px;
+}
+
+#h3{
+  font-size: 32px;
 }
 #footer{
   background-color: black;
@@ -37,10 +49,16 @@ button{
     background-color: black;
     color: pink;
     padding: 6px;
+    
 }
 
 input{
   border-radius: 10px;
+}
+
+#img{
+  border-radius:100px
+
 }
 
 
@@ -71,6 +89,14 @@ input{
   font-weight: 900;
 }
 
+#b:hover{
+  color: pink;
+}
+
+#b a:hover{
+  color: pink;
+}
+
 #b a{
   text-decoration: none;
   color:black;
@@ -95,11 +121,14 @@ input{
   #container1{
     display: flex;
     flex-wrap: wrap;
-    height: 700px;
+    height: 800px;
+    padding-top:100px ;
+
+
   }
   #container1 img{
     width:350px;
-    padding:0px
+    padding:0px;
   }
 
   #header{
@@ -117,4 +146,18 @@ input{
     align-items: center;
 
   }
+
+  #h1{
+    font-size: 48px;
+  }
+  
+  #h2{
+    font-size: 32px;
+  }
+  
+  #h3{
+    font-size: 24px;
+  }
+
+  
 }

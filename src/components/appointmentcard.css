@@ -1,0 +1,9 @@
+#appoint{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#appoint img{
+    width:300px
+}

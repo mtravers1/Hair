@@ -5,30 +5,62 @@
 }
 #p p{
   
-    margin:10px;
+    margin:5px;
     font-weight: 900;
 
 }
+#p img{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+
+
+
+#p:hover{
+   /* width: 100px;  */
+}
+
+
 
 #buttin{
     display: flex;
     justify-content: center;
     padding: 10px;
     
+    
 }
 
 #p{
-    margin: 20px;
+    /* margin: 50px;
         border: 5px solid black;
         border-radius: 10px;
         background-color: white;
         justify-content: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 
 }
+#am{
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: large;
+    /* background: pink; */
+    border: 3px black solid;
+    cursor: pointer;
+    width: 30%;
+}
 
+
+#button{
+    background: linear-gradient(0.25turn, pink, white, pink);
+    color: black;
+    border-radius: 10px;
+    font-family: cursive;
+    border:2px solid black;
+
+}
 @media(max-width:600px){
     #p{
         margin:75px;

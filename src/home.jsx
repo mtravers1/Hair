@@ -67,10 +67,10 @@ function Home() {
      {/* <Header/> */}
      <div id="container1">
           <span>
-          <h1>"WORK IN PROGESS"</h1>
+          <h1 id='h1'>"WORK IN PROGESS"</h1>
 
-            <h1>Looking for a Stylist who is reliable</h1>
-            <h3 style={{color:"black"}}>The best stylist in Marylary with unbeatable prices, and %100 satifaction or money back</h3>
+            <h2 id='h2'>Looking for a Stylist who is reliable</h2>
+            <h3 id='h3' style={{color:"black"}}>The best stylist in Marylary with unbeatable prices, and %100 satifaction or money back</h3>
           
           <button id='b'><a style={{textDecoration:'none'}} href="/appointment">Book Appointment Now</a></button>
           </span>

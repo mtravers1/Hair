@@ -4,14 +4,20 @@
 
 #inven{
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     background: linear-gradient(0.25turn, pink, white, pink);
+    padding-left: 155px;
 }
 
 #prod{
     font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
 }
+
+#prod p{
+}
+
+
 
 
 
@@ -19,9 +25,15 @@
     #inven{
         display: flex;
         flex-direction: column;
+        padding-left: 0px;
     }
 
     #p{
-        margin:75px
+        /* margin:75px */
+        width: 60%;
+    }
+
+    #prod{
+        
     }
 }

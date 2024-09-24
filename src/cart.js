@@ -7,7 +7,7 @@ const Cart = ()=>{
     const [cart, SetCart]=useState({name:"", price:"", description:""})
 
     const {total}=useContext(StoreContext)
-
+    console.log(total)
     return(
         <div>
             <Nav/>

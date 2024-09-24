@@ -5,9 +5,14 @@ import "./card.css"
 import { useContext } from 'react'
 import { StoreContext } from '../context-reducer/Context'
 import { useState } from 'react'
+import { FaStar } from 'react-icons/fa6'
 const Card = (props)=>{
 
     const prod=props.products
+    const [name, setName]=useState()
+    const [price, setPrice]=useState()
+    const [description, setDesctiption]=useState()
+    const [image, setImage]=useState()
     // const prod=props.hairstyles
     // console.log(prod)
     const [add, SetAdd]=useState({name:"name", price:0, description:"description"})
@@ -16,24 +21,77 @@ const Card = (props)=>{
         e.preventDefault()
         let data={name:prod.name, price:prod.price, description:prod.description}
         SetAdd(data)
+        
       
     }
     const handleAdd= ()=>{
-        addToBasket(prod)
+        let data={name, price, description}
+        
+        addToBasket(data)
+        console.log(name)
+        
+
+
     }
 
     return(
         <div>
             <div id="inven">
 
-{prod.map((d)=>(
-    
-    <div id="prod">
+{prod.map((d, index)=>(
+    <div key={d.id} style={{display:'flex'}} id="prod">
       <div id="p">
-        <p value={d.name}>{d.name}</p>
-        <p value={d.price}>$ {d.price}</p>
-        <p value={d.description}>{d.ingredients}</p>
+        
         <img value={d.photo} src={d.photo}/>
+        <p value={name}>{d.name}</p>
+        <p value={price}>$ {d.price}</p>
+
+        <p value={description}>{d.ingredients}</p>
+        <p>
+            {
+            [...Array(5)].map(()=>(
+                <>
+                            <FaStar/>
+                </>
+               
+
+            ))
+            
+            }
+
+        </p>
+        <select id='am'>
+        <option>
+                1
+            </option>
+            <option>
+                2
+            </option>
+            <option>
+                3
+            </option>
+            <option>
+                4
+            </option>
+            <option>
+                5
+            </option>
+            <option>
+                6
+            </option>
+            <option>
+                7
+            </option>
+            <option>
+                8
+            </option>
+            <option>
+                9
+            </option>
+            <option>
+                10
+            </option>
+        </select>
         {/* <input /> */}
         <div id='buttin'>
         <button onClick={handleAdd} id="button">Add to cart</button>
