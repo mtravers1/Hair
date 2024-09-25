@@ -4,10 +4,11 @@ import './nav.css'
 import { FaCartShopping } from "react-icons/fa6";
 import logo from '../pics/logo.jpg'
 import { CartState } from "../context-reducer/Context";
+import { Link, useLocation } from "react-router-dom";
+
 const Nav = ()=>{
 
   const {state:{cart}, dispatch}=CartState()
-console.log('this is the cart',cart)
     const [nav, setNav]=useState('')
     const [toggle, setToggle]=useState()
 
@@ -18,23 +19,23 @@ console.log('this is the cart',cart)
         <div>
                  <header id="header">
         <span>
-        <a href='/'><img width={100} src={logo} alt="logo" id="logo"/></a> 
+        <Link to='/'><img width={100} src={logo} alt="logo" id="logo"/></Link> 
         </span>
         <span>
 
-          <a style={{textDecoration:'none', color:'white'}} href='/'><h2>Hair Stylist Creations</h2></a>
+          <Link style={{textDecoration:'none', color:'white'}} to='/'><h2>Hair Stylist Creations</h2></Link>
         </span>
         <div id="navhead">
             <div id="nav">
             {/* <li>Products</li> */}
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
 
-                <a href="/products">Products</a>
+                <Link to="/products">Products</Link>
                 {/* <li>Styles</li> */}
-                <a href="/styles">Styles</a>
+                <Link to="/styles">Styles</Link>
 
                 {/* <li>Contacts</li> */}
-                <a href="/about">About</a>
+                <Link to="/about">About</Link>
 
 
 
@@ -50,21 +51,23 @@ console.log('this is the cart',cart)
           </span>
           <p id='cl'>{cart.length}</p>
 
-          <a href='./cart'><button style={{background:"none", color:"pink", border:'none', cursor:'pointer'}}><FaCartShopping size={30} /></button></a>
+          <Link to='/cart'><button style={{background:"none", color:"pink", border:'none', cursor:'pointer'}}><FaCartShopping size={30} /></button></Link>
             
 
         </span>
       </header>
       <div id='headmobile'>
       <span>
-        <a href='/'><img width={50} src={logo} alt="logo" id="logo"/></a> 
+        <Link to='/'><img width={50} src={logo} alt="logo" id="logo"/></Link> 
         </span>
         <span id='l'>
           <span >
-          <button id="login"><a href='/login'>Login</a></button>
+          <button id="login"><Link to='/login'>Login</Link></button>
 
           </span>
-            <button style={{background:"none", color:"pink", border:'none', cursor:'pointer'}}><FaCartShopping size={30} /><a href='./cart'></a></button>
+          <p id='cl'>{cart.length}</p>
+
+            <button style={{background:"none", color:"pink", border:'none', cursor:'pointer', textDecoration:'none'}}><Link to='/cart'><FaCartShopping size={30} /></Link></button>
             
 
         </span>
@@ -75,12 +78,12 @@ console.log('this is the cart',cart)
            {toggle && (
             <div id="mob" >
                 <ul>
-                  <a href="/products">Products</a>
+                  <Link to="/products">Products</Link>
                 {/* <li>Styles</li> */}
-                <a href="/styles">Styles</a>
+                <Link to="/styles">Styles</Link>
 
                 {/* <li>Contacts</li> */}
-                <a href="/about">About</a>
+                <Link to="/about">About</Link>
                 </ul>
             </div>
            )}

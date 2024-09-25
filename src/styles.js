@@ -39,17 +39,17 @@ const Styles = ()=>{
         photo:h2
     },
     {
-        id:12,
+        id:13,
         name:"Dreads",
         price:40.00,
         photo:h3
     }, {
-        id:12,
+        id:14,
         name:"Dreads",
         price:50.00,
         photo:h4
     }, {
-        id:12,
+        id:15,
         name:"Dreads",
         price:145.00,
         photo:h5

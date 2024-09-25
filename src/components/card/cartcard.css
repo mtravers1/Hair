@@ -1,0 +1,35 @@
+#card{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin: 30px;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#card img{
+    padding:5px;
+    width:200px
+}
+
+#info{
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    justify-content:space-around;
+    width:50%
+
+}
+
+#radio{
+    display: flex;
+    flex-direction: column;
+}
+
+#radio p{
+    
+}
+
+#shipping{
+    width: 33%;
+}

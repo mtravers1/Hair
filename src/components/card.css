@@ -66,4 +66,10 @@
         margin:75px;
 
     }
+    #p img{
+        width: 210px;
+        height: 250px;
+        cursor: pointer;
+    }
+    
 }

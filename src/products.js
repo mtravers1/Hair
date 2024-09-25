@@ -21,7 +21,6 @@ import { CartState } from './context-reducer/Context'
 const Products = ()=>{
    
 const {state:{items}}=CartState()
-console.log('the',items)
     // const [cart, SetCart]=useState({name:"", price:0, description:""})
     const handleDelete=(e)=>{
         e.preventDefault()

@@ -4,12 +4,13 @@ import products from "../data/productdata";
 const Cart = createContext();
 
 const Context = ({ children }) => {
-  const product = [...Array(20)].map(() => ({
-    id: products.id,
-    name: products.name,
-    price: products.price,
-    // fastDelivery: faker.datatype.boolean(),
-  }));
+//   const product = [...Array(20)].map(() => ({
+//     id: products.id,
+//     name: products.name,
+//     price: products.price,
+    
+//     // fastDelivery: faker.datatype.boolean(),
+//   }));
 
   const [state, dispatch] = useReducer(cartReducer, {
     products: products,

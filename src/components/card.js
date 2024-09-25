@@ -2,15 +2,15 @@ import React from 'react'
 import oil from '../pics/oil.jpg'
 import weave from '../pics/weave.jpg'
 import "./card.css"
+// import products from '../data/productdata'
 import { useContext } from 'react'
 // import { StoreContext } from '../context-reducer/Context'
 import { useState } from 'react'
 import { FaStar } from 'react-icons/fa6'
 import { CartState } from '../context-reducer/Context'
 const Card = (props)=>{
-
-    const {state:{cart}, dispatch}=CartState()
-    
+    // console.log(products)
+    const {state:{cart}, dispatch,}=CartState()
     const prod=props.products
     const [name, setName]=useState()
     const [price, setPrice]=useState()
@@ -97,7 +97,7 @@ const Card = (props)=>{
         </select>
         {/* <input /> */}
         <div id='buttin'>
-        <button onClick={()=>dispatch({type: "ADD_TO_CART", payload:d})} id="button">Add to cart</button>
+        <button onClick={()=>dispatch({type: 'ADD_TO_CART', payload:d,})} id="button">Add to cart</button>
 
         </div>
     </div>
