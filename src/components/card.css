@@ -71,5 +71,14 @@
         height: 250px;
         cursor: pointer;
     }
+    #card{
+        flex-direction: column;
+        margin:0px;
+
+    }
+
+    #cardd{
+        width: 100%;
+    }
     
 }

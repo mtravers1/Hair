@@ -19,7 +19,7 @@ const Nav = ()=>{
         <div>
                  <header id="header">
         <span>
-        <Link to='/'><img width={100} src={logo} alt="logo" id="logo"/></Link> 
+        <Link to='/'><img width={70} src={logo} alt="logo" id="logo"/></Link> 
         </span>
         <span>
 

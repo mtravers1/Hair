@@ -1,6 +1,9 @@
 import React from "react";
 import './cartcard.css'
+import { CartState } from "../../context-reducer/Context";
 const CartCard = (props)=>{
+
+    const {state:{cart}, dispatch,}=CartState()
     const data = props.data;
     return(
         <div>
@@ -19,9 +22,13 @@ const CartCard = (props)=>{
                             1
                         </option>
                     </select>
+                    <div>
+                    <button onClick={()=>dispatch({type: 'REMOVE_FROM_CART', payload:c,})} id='remove'>Remove</button>
+                    <button id='remove'>Update</button>
 
-                    <button>Remove</button>
 
+                    </div>
+                    
 
 
                     </span>

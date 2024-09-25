@@ -18,17 +18,25 @@ const Carts = ()=>{
     cart.forEach((a)=>{
         total+=a.price
     })
+    let url='http://localhost:8080/'
+    fetch(url).then(res=>res.json()).then(data=>console.log(data))
 
-        // const handleSubmit= (e)=>{
-        //     e.PreventDefault()
+        const handleSubmit= (e)=>{
+            e.preventDefault()
+            let sub={id:cart.id, name:cart.name, price:cart.price}
+            console.log(cart)
             
-        //     fetch('http://localhost:8080/', {
-        //         method:'POST',
-        //         headers:'Content-Type:application/json',
-        //         body:JSON.stringify(cart)
+  fetch('http://localhost:8080/', {
+                method:'POST',
+                headers:{
+                    'Accept': 'application/json',
+      'Content-Type': 'application/json'
+                },
+                body:JSON.stringify(sub)
 
-        //     })
-        // }
+            }).then(alert('posted'))    //       
+            
+        }
 
     return(
         <div>
@@ -40,13 +48,14 @@ const Carts = ()=>{
         <CartCard data={cart}/>
             </div>
 
-
+       
         <div id='total'>
+        <form id='f' onSubmit={handleSubmit}>
             {
                 cart.map((d)=>(
                     
                     <>
-                    <div id='c'>
+                    <div key={d.id} id='c'>
                     <p >{d.name}</p>
                     <p >$ {d.price}</p>
 
@@ -55,13 +64,24 @@ const Carts = ()=>{
                     </>
                 ))
             }
-            <p>Total: {total} </p>
+            <div id='z'>
+                <span id='o'>
+                <p>Total:</p>
+                <p> {total} </p>
+                </span>
+
+                <label>Delivery</label>
+
+            
             <span id='shipping'>
+
                         <span>
-                        <label>Delivery</label>
                         <span sty id='radio'>
-                           
-                        <p >Express</p>
+                           <span>
+                           <p >Express</p>
+
+
+                           </span>
                         <span style={{display:'flex'}}>
                         <input type='radio'/>
                         <p>1 October 2024</p>
@@ -95,10 +115,14 @@ const Carts = ()=>{
                      
                         </span>
                     </span>
-                    <button>Order</button>
+                    {/* <button>Order</button> */}
+                    <span style={{display:'flex', justifyContent:'center'}}>
+                    <button id='butto'>Order</button>
 
-                    {/* <button onSubmit={handleSubmit}>Order</button> */}
-                    
+
+                    </span>
+                    </div>
+                    </form>
         </div>
 
 

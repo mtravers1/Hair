@@ -42,7 +42,7 @@ const Appointment = ()=>{
             <div style={{textAlign:'center'}}>
             </div>
 
-                <form onSubmit={handleSubmit}>
+                <form id='form' onSubmit={handleSubmit}>
                     <label>Name</label>
                     <input value={name} onChange={e=>setName(e.target.value)}/>
                     <label>Style</label>

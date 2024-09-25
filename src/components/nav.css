@@ -27,7 +27,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 #login{
 
@@ -36,7 +35,6 @@
     font-family: 'Courier New', Courier, monospace;
     border: none;
     font-size: 30px;
-    padding:20px;
     cursor: pointer;
     font-weight: bold;
 }
