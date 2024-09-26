@@ -1,4 +1,4 @@
-#form{
+/* #form{
     display: flex;
     flex-direction: column;
     font-size: 28px;
@@ -6,7 +6,7 @@
     font-weight: bold;
     width: 30%;
     justify-content: center;
-}
+} */
 
 #title{
     text-align: center;
@@ -26,6 +26,12 @@
 
 #form input{
     height: 40px;
+    margin-top: 30px;
+    margin-bottom:20px;
+    width: 50%;
+}
+label{
+    margin-top: 30px;
 }
 
 #form button{
@@ -49,7 +55,6 @@
         font-size: 28px;
         color: black;
         font-weight: bold;
-        width: 75%;
         justify-content: center;
     }
 }

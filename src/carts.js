@@ -77,7 +77,7 @@ const Carts = ()=>{
 
                         <span>
                         <span sty id='radio'>
-                           <span>
+                           <span style={{justifyContent:'right'}}>
                            <p >Express</p>
 
 

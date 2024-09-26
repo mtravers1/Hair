@@ -38,7 +38,7 @@ const Appointment = ()=>{
             <Nav/>
             <h1 style={{background:'black', margin:0, color:'white', padding:'20px'}}  id="title">Book Appointment</h1>
 
-            <div id="form">
+            <div >
             <div style={{textAlign:'center'}}>
             </div>
 
