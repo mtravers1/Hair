@@ -25,16 +25,16 @@ const Carts = ()=>{
             e.preventDefault()
             let sub={id:cart.id, name:cart.name, price:cart.price}
             console.log(cart)
-            
-  fetch('http://localhost:8080/', {
-                method:'POST',
-                headers:{
-                    'Accept': 'application/json',
-      'Content-Type': 'application/json'
-                },
-                body:JSON.stringify(sub)
+//   /           
+//   fetch('http://localhost:8080/', {
+//                 method:'POST',
+//                 headers:{
+//                     'Accept': 'application/json',
+//       'Content-Type': 'application/json'
+//                 },
+//                 body:JSON.stringify(sub)
 
-            }).then(alert('posted'))    //       
+//             }).then(alert('posted'))    /      
             
         }
 
